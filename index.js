@@ -16,7 +16,7 @@ server.post(`/api/users`, (req, res) => {
                 res.status(201).json(user)
     })
     .catch(err => {
-        console.Console.log(err)
+        console.log(err)
         res.status(400).json({ errorMessage: "There was an error while saving the user to the database"})
     })
     } else {
@@ -91,7 +91,7 @@ server.put('/api/users/:id', (req, res) => {
                
     })
     .catch(err => {
-        console.Console.log(err)
+        console.log(err)
         res.status(500).json({ errorMessage: "The user information could not be modified."})
     })
     } else {
